@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Simulation Results</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/charts.css">
+</head>
+<body>
+    <header>
+        <h1>Energy Simulation Results</h1>
+    </header>
+    <main>
+        <button id="simulateButton">Simulate</button>
+        <div id="resultsContainer" style="display:none;">
+            <h2>Simulation Statistics</h2>
+            <div id="costResults"></div>
+            <div id="usageResults"></div>
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+    <script src="js/simulation.js"></script>
+    <script src="js/charts.js"></script>
+    <script>
+        document.getElementById('simulateButton').addEventListener('click', function() {
+            // Call the simulation function and display results
+            simulateEnergyUsage();
+        });
+
+        function simulateEnergyUsage() {
+            // Fetch simulation results from the backend
+            fetch('/api/simulate')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('costResults').innerText = `Total Cost: $${data.totalCost}`;
+                    document.getElementById('usageResults').innerText = `Total Usage: ${data.totalUsage} kWh`;
+                    document.getElementById('resultsContainer').style.display = 'block';
+                })
+                .catch(error => console.error('Error fetching simulation results:', error));
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+{
+  "appliances": [
+    {
+      "name": "Fridge",
+      "min_watts": 300,
+      "max_watts": 450,
+      "start_time": 0,
+      "end_time": 24
+    },
+    {
+      "name": "Mini Fridge",
+      "min_watts": 30,
+      "max_watts": 70,
+      "start_time": 0,
+      "end_time": 24
+    },
+    {
+      "name": "Stove",
+      "min_watts": 1000,
+      "max_watts": 2000,
+      "start_time": 9,
+      "end_time": 10
+    },
+    {
+      "name": "Toaster & Microwave",
+      "min_watts": 800,
+      "max_watts": 1600,
+      "start_time": 8,
+      "end_time": 14
+    },
+    {
+      "name": "Oven",
+      "min_watts": 2000,
+      "max_watts": 3000,
+      "start_time": 17,
+      "end_time": 18
+    },
+    {
+      "name": "Phone(s) & Tablet(s)",
+      "min_watts": 15,
+      "max_watts": 50,
+      "start_time": 0,
+      "end_time": 24
+    },
+    {
+      "name": "Laptop(s)",
+      "min_watts": 30,
+      "max_watts": 90,
+      "start_time": 0,
+      "end_time": 24
+    },
+    {
+      "name": "PC(s)",
+      "min_watts": 50,
+      "max_watts": 350,
+      "start_time": 0,
+      "end_time": 24
+    },
+    {
+      "name": "TV(s)",
+      "min_watts": 50,
+      "max_watts": 100,
+      "start_time": 8,
+      "end_time": 18
+    },
+    {
+      "name": "Lightbulbs & Lamps",
+      "min_watts": 20,
+      "max_watts": 80,
+      "start_time": 0,
+      "end_time": 24
+    },
+    {
+      "name": "Washing Machine",
+      "min_watts": 800,
+      "max_watts": 1000,
+      "start_time": 17,
+      "end_time": 18
+    },
+    {
+      "name": "Dryer",
+      "min_watts": 1800,
+      "max_watts": 3200,
+      "start_time": 18,
+      "end_time": 19
+    },
+    {
+      "name": "AC",
+      "min_watts": 4000,
+      "max_watts": 5000,
+      "start_time": 10,
+      "end_time": 18
+    }
+  ]
+}
